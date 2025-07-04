@@ -69,7 +69,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-[100svh] sm:h-screen flex items-start justify-center overflow-hidden pt-12 sm:pt-20">
+    <section className="relative h-[100svh] sm:h-screen flex items-start justify-center overflow-hidden pt-20 sm:pt-24">
       {/* Background Image with Parallax Effect */}
       <motion.div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
@@ -91,7 +91,7 @@ export default function Hero() {
 
              {/* Main Content Container */}
        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-         <div className="flex items-start justify-center pt-8 sm:pt-12">
+         <div className="flex items-start justify-center pt-6 sm:pt-8">
            {/* Content Section */}
            <div className="max-w-4xl text-center w-full">
             <AnimatePresence mode="wait">
@@ -105,7 +105,7 @@ export default function Hero() {
                     ease: [0.25, 0.46, 0.45, 0.94],
                     staggerChildren: 0.1
                   }}
-                  className="text-white space-y-4 sm:space-y-6"
+                  className="text-white space-y-5 sm:space-y-6"
                 >
                                  {/* Badge */}
                  <motion.div
@@ -153,7 +153,7 @@ export default function Hero() {
                    initial={{ opacity: 0, y: 20 }}
                    animate={{ opacity: 1, y: 0 }}
                    transition={{ delay: 0.7 }}
-                   className="flex flex-col sm:flex-row gap-2 sm:gap-4 pt-1 sm:pt-4 justify-center px-4 sm:px-0"
+                   className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center px-4 sm:px-0"
                  >
                   <button
                     onClick={() => scrollToSection('services')}
@@ -184,7 +184,7 @@ export default function Hero() {
         onClick={prevSlide}
         whileHover={{ scale: 1.1, x: -5 }}
         whileTap={{ scale: 0.95 }}
-        className="hidden sm:flex absolute left-4 lg:left-8 top-[35%] sm:top-[30%] transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
+        className="hidden sm:flex absolute left-4 lg:left-8 top-[40%] sm:top-[35%] transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
       >
         <ChevronLeft className="h-5 w-5" />
       </motion.button>
@@ -193,13 +193,13 @@ export default function Hero() {
         onClick={nextSlide}
         whileHover={{ scale: 1.1, x: 5 }}
         whileTap={{ scale: 0.95 }}
-        className="hidden sm:flex absolute right-4 lg:right-8 top-[35%] sm:top-[30%] transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
+        className="hidden sm:flex absolute right-4 lg:right-8 top-[40%] sm:top-[35%] transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
       >
         <ChevronRight className="h-5 w-5" />
       </motion.button>
       
       {/* Enhanced Slide Indicators with Mobile Navigation */}
-      <div className="absolute top-[75%] sm:top-[65%] left-1/2 transform -translate-x-1/2 z-30">
+      <div className="absolute top-[78%] sm:top-[70%] left-1/2 transform -translate-x-1/2 z-30">
         <div className="flex items-center justify-center space-x-3 sm:space-x-6">
           
           {/* Mobile Left Arrow */}
