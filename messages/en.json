@@ -1,0 +1,172 @@
+{
+  "header": {
+    "title": "Vistream - Your Premium Vistream Streaming Experience",
+    "logo": "Vistream"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "packages": "Our packages",
+    "pricing": "Our prices",
+    "cta": "Subscribe Now"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Wide selection",
+      "subtitle": "of channels",
+      "description": "Enjoy more than 10,000 TV channels from around the world, including French, Arabic, European, and American channels.",
+      "btn1": "Our Services",
+      "btn2": "Our Offers"
+    },
+    "slide2": {
+      "title": "Movies and Series",
+      "subtitle": "on demand",
+      "description": "Access a vast library of recent movies and popular series.",
+      "btn1": "Our Services",
+      "btn2": "Our Offers"
+    },
+    "slide3": {
+      "title": "Compatible with",
+      "subtitle": "all devices",
+      "description": "Watch TV on Smart TV, Android, iPhone, iPad, PC, Mac, Mag Box, Enigma2, Fire Stick, etc.",
+      "btn1": "Our Services",
+      "btn2": "Our Offers"
+    }
+  },
+  "about": {
+    "tag": "About Us",
+    "title": "About Vistream",
+          "description": "Vistream is your trusted Streaming provider, offering unlimited access to TV channels, movies, series and sports in HD, Full HD and 4K. With stable service, easy installation and 24/7 support, we guarantee a premium Vistream Streaming experience, accessible on all your devices.",
+    "btn": "Our Subscriptions"
+  },
+  "services": {
+    "title": "Our services",
+    "service1": {
+              "title": "Premium Vistream Streaming",
+      "description": "Access more than 10,000 TV channels worldwide in HD, Full HD and 4K, with smooth streaming without interruption."
+    },
+    "service2": {
+      "title": "VOD & Series on Demand",
+      "description": "Enjoy a vast library of movies, series and documentaries updated regularly."
+    },
+    "service3": {
+      "title": "24/7 Support & Assistance",
+      "description": "Our team is available 24/7 to support you and answer your questions."
+    }
+  },
+  "pricing": {
+          "title": "Our Vistream Streaming Offers",
+    "subtitle": "At Vistream, we offer several plans adapted to all budgets and needs:",
+    "plan1": {
+      "title": "Vistream x1 Month",
+      "price": "15",
+      "decimal": "€",
+      "originalPrice": "25",
+      "originalDecimal": "€",
+      "period": "/month",
+      "btn": "Order"
+    },
+    "plan2": {
+      "title": "Vistream x12 Months",
+      "price": "120",
+      "decimal": ".99€",
+      "originalPrice": "180",
+      "originalDecimal": "€",
+      "period": "/12 months",
+      "btn": "Order"
+    },
+    "plan3": {
+      "title": "Vistream x24 Months",
+      "price": "199",
+      "decimal": "€",
+      "originalPrice": "300",
+      "originalDecimal": "€",
+      "period": "/24 months",
+      "btn": "Order"
+    },
+    "features": {
+      "channels": "Channels",
+      "cinema": "Cinema",
+      "cinemaDesc": "Ultra-recent cinema and must-see films",
+      "series": "Series",
+      "seriesDesc": "CANAL+ Original Creation, international series and all Apple TV+ series"
+    },
+    "guarantee": {
+      "title": "Satisfaction Guarantee or Money Back",
+      "description": "Test our service for 24h. If you're not satisfied, we'll refund you fully.",
+      "secure": "Secure Payment",
+      "instant": "Instant Activation",
+      "support": "Premium Support"
+    }
+  },
+  "reviews": {
+    "title": "Our customers reviews",
+    "review1": {
+      "name": "Lucas M.",
+              "text": "Vistream is the best Vistream Streaming service I've tested. Exceptional quality and responsive customer service!",
+      "verified": "Verified purchase"
+    },
+    "review2": {
+      "name": "Nadia B.",
+      "text": "Perfect for watching matches in HD without interruption. Thank you for this top service!",
+      "verified": "Verified purchase"
+    },
+    "review3": {
+      "name": "Karim T.",
+      "text": "Easy to install subscription, varied channels and excellent support. I recommend!",
+      "verified": "Verified purchase"
+    }
+  },
+  "films": {
+    "title": "Trending Now",
+    "description": "Discover the most popular movies and series of the moment, ranked by trends and available in high-quality streaming."
+  },
+  "series": {
+    "title": "Latest Series",
+    "description": "Watch your favorite shows, movies and sports live and on replay, with exceptional picture quality."
+  },
+  "counter": {
+    "channels": {
+      "number": "152,000",
+      "text": "Channels and VOD worldwide"
+    },
+    "films": {
+      "number": "26,000",
+      "text": "Films, all genres and languages"
+    },
+    "series": {
+      "number": "3,500",
+      "text": "Series with regular updates"
+    }
+  },
+  "footer": {
+    "language": "En",
+          "description": "Your premium Vistream Streaming service for unlimited entertainment. Over 152,000 channels in HD, 4K and an exceptional streaming experience.",
+    "navigation": "Navigation",
+    "services": {
+      "title": "Services",
+              "iptv": "Premium Vistream Streaming",
+      "channels": "HD/4K Channels",
+      "vod": "VOD & Series",
+      "support": "24/7 Support"
+    },
+    "features": {
+      "channels": "152,000+ Channels",
+      "secure": "Secure & Reliable",
+      "streaming": "HD/4K Streaming",
+      "multilingual": "Multilingual Support"
+    },
+    "contact": {
+      "title": "Contact & Support",
+      "email": "support@vistream.com",
+      "phone": "+33 1 23 45 67 89",
+      "location": "Paris, France"
+    },
+    "copyright": "Vistream. All rights reserved.",
+          "service": "Premium Vistream Streaming Service",
+    "location": "France",
+    "status": "Service active",
+    "uptime": "99.9% Uptime"
+  }
+} 

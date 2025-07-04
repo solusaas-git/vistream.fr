@@ -1,0 +1,172 @@
+{
+  "header": {
+    "title": "Vistream - Votre Expérience Vistream Streaming Premium",
+    "logo": "Vistream"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "packages": "Nos bouquets",
+    "pricing": "Nos Tarifs",
+    "cta": "S'abonner Maintenant"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Large choix",
+      "subtitle": "de chaînes",
+      "description": "Profitez de plus de 10 000 chaînes TV de partout dans le monde, y compris des chaînes françaises, arabes, européennes et américaines.",
+      "btn1": "Nos Services",
+      "btn2": "Nos Offres"
+    },
+    "slide2": {
+      "title": "Films et Séries",
+      "subtitle": "à la demande",
+      "description": "Accédez à une large bibliothèque de films récents et de séries populaires.",
+      "btn1": "Nos Services",
+      "btn2": "Nos Offres"
+    },
+    "slide3": {
+      "title": "Compatible avec",
+      "subtitle": "tous les appareils",
+      "description": "Regardez la TV sur Smart TV, Android, iPhone, iPad, PC, Mac, Mag Box, Enigma2, Fire Stick, etc.",
+      "btn1": "Nos Services",
+      "btn2": "Nos Offres"
+    }
+  },
+  "about": {
+    "tag": "À Propos",
+    "title": "À Propos de Vistream",
+          "description": "Vistream est votre fournisseur Streaming de confiance, offrant un accès illimité aux chaînes TV, films, séries et sports en HD, Full HD et 4K. Avec un service stable, une installation facile et un support 24/7, nous garantissons une expérience Vistream Streaming premium, accessible sur tous vos appareils.",
+    "btn": "Nos Abonnements"
+  },
+  "services": {
+    "title": "Nos services",
+    "service1": {
+              "title": "Vistream Streaming Premium",
+      "description": "Accédez à plus de 10 000 chaînes TV du monde entier en HD, Full HD et 4K, avec une diffusion fluide et sans interruption."
+    },
+    "service2": {
+      "title": "VOD & Séries à la Demande",
+      "description": "Profitez d'une vaste bibliothèque de films, séries et documentaires mis à jour régulièrement."
+    },
+    "service3": {
+      "title": "Support & Assistance 24/7",
+      "description": "Notre équipe est disponible 24h/24 et 7j/7 pour vous accompagner, répondre à vos questions."
+    }
+  },
+  "pricing": {
+          "title": "Nos Offres Vistream Streaming",
+    "subtitle": "Chez Vistream, nous proposons plusieurs formules adaptées à tous les budgets et besoins :",
+    "plan1": {
+      "title": "Vistream x1 Mois",
+      "price": "15",
+      "decimal": "€",
+      "originalPrice": "25",
+      "originalDecimal": "€",
+      "period": "/mois",
+      "btn": "Commander"
+    },
+    "plan2": {
+      "title": "Vistream x12 Mois",
+      "price": "120",
+      "decimal": ",99€",
+      "originalPrice": "180",
+      "originalDecimal": "€",
+      "period": "/12 mois",
+      "btn": "Commander"
+    },
+    "plan3": {
+      "title": "Vistream x24 Mois",
+      "price": "199",
+      "decimal": "€",
+      "originalPrice": "300",
+      "originalDecimal": "€",
+      "period": "/24 mois",
+      "btn": "Commander"
+    },
+    "features": {
+      "channels": "Chaînes",
+      "cinema": "Cinéma",
+      "cinemaDesc": "Cinéma ultra-récent et films incontournables",
+      "series": "Séries",
+      "seriesDesc": "Création Originale CANAL+, séries internationales et l'intégralité des séries Apple TV+"
+    },
+    "guarantee": {
+      "title": "Garantie Satisfait ou Remboursé",
+      "description": "Testez notre service pendant 24h. Si vous n'êtes pas satisfait, nous vous remboursons intégralement.",
+      "secure": "Paiement Sécurisé",
+      "instant": "Activation Immédiate", 
+      "support": "Support Premium"
+    }
+  },
+  "reviews": {
+    "title": "Avis de nos clients",
+    "review1": {
+      "name": "Lucas M.",
+              "text": "Vistream est le meilleur service Vistream Streaming que j'ai testé. Une qualité exceptionnelle et un service client réactif !",
+      "verified": "Achat vérifié"
+    },
+    "review2": {
+      "name": "Nadia B.",
+      "text": "Parfait pour regarder les matchs en HD sans coupure. Merci pour ce service top !",
+      "verified": "Achat vérifié"
+    },
+    "review3": {
+      "name": "Karim T.",
+      "text": "Abonnement facile à installer, chaînes variées et excellent support. Je recommande !",
+      "verified": "Achat vérifié"
+    }
+  },
+  "films": {
+    "title": "Tendances actuelles",
+    "description": "Découvrez les films et séries les plus populaires du moment, classés par tendance et disponibles en streaming haute qualité."
+  },
+  "series": {
+    "title": "Dérniers Séries",
+    "description": "Regardez vos émissions, films et sports préférés en direct et en replay, avec une qualité d'image exceptionnelle."
+  },
+  "counter": {
+    "channels": {
+      "number": "152,000",
+      "text": "Chaînes et VOD du monde entier"
+    },
+    "films": {
+      "number": "26,000",
+      "text": "Films, tout les genres et langues"
+    },
+    "series": {
+      "number": "3,500",
+      "text": "Séries en mise à jour régulière"
+    }
+  },
+  "footer": {
+    "language": "Fr",
+          "description": "Votre service Vistream Streaming premium pour un divertissement sans limites. Plus de 152,000 chaînes en HD, 4K et une expérience de streaming exceptionnelle.",
+    "navigation": "Navigation",
+    "services": {
+      "title": "Services",
+              "iptv": "Vistream Streaming Premium",
+      "channels": "Chaînes HD/4K",
+      "vod": "VOD & Séries",
+      "support": "Support 24/7"
+    },
+    "features": {
+      "channels": "152,000+ Chaînes",
+      "secure": "Sécurisé & Fiable",
+      "streaming": "Streaming HD/4K",
+      "multilingual": "Support Multilingue"
+    },
+    "contact": {
+      "title": "Contact & Support",
+      "email": "support@vistream.com",
+      "phone": "+33 1 23 45 67 89",
+      "location": "Paris, France"
+    },
+    "copyright": "Vistream. Tous droits réservés.",
+          "service": "Service Vistream Streaming Premium",
+    "location": "France",
+    "status": "Service actif",
+    "uptime": "99.9% Uptime"
+  }
+} 
