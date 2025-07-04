@@ -69,7 +69,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen h-screen flex items-start justify-center overflow-hidden pt-16 sm:pt-20">
       {/* Background Image with Parallax Effect */}
       <motion.div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
@@ -91,7 +91,7 @@ export default function Hero() {
 
              {/* Main Content Container */}
        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-         <div className="flex items-center justify-center min-h-[60vh] sm:min-h-[70vh]">
+         <div className="flex items-center justify-center min-h-[50vh] sm:min-h-[55vh]">
            {/* Content Section */}
            <div className="max-w-4xl text-center w-full">
             <AnimatePresence mode="wait">
