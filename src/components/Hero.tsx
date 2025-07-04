@@ -184,7 +184,7 @@ export default function Hero() {
         onClick={prevSlide}
         whileHover={{ scale: 1.1, x: -5 }}
         whileTap={{ scale: 0.95 }}
-        className="hidden sm:flex absolute left-4 lg:left-8 top-1/2 transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
+        className="hidden sm:flex absolute left-4 lg:left-8 top-[45%] sm:top-[40%] transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
       >
         <ChevronLeft className="h-6 w-6" />
       </motion.button>
@@ -193,13 +193,13 @@ export default function Hero() {
         onClick={nextSlide}
         whileHover={{ scale: 1.1, x: 5 }}
         whileTap={{ scale: 0.95 }}
-        className="hidden sm:flex absolute right-4 lg:right-8 top-1/2 transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
+        className="hidden sm:flex absolute right-4 lg:right-8 top-[45%] sm:top-[40%] transform -translate-y-1/2 z-30 bg-black/20 backdrop-blur-md hover:bg-[#f04f24]/80 border border-white/20 hover:border-[#f04f24] text-white p-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#f04f24]/25 items-center justify-center"
       >
         <ChevronRight className="h-6 w-6" />
       </motion.button>
       
       {/* Enhanced Slide Indicators with Mobile Navigation */}
-      <div className="absolute bottom-6 sm:bottom-8 lg:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
+      <div className="absolute bottom-16 sm:bottom-20 lg:bottom-24 left-1/2 transform -translate-x-1/2 z-30">
         <div className="flex items-center justify-center space-x-4 sm:space-x-6">
           
           {/* Mobile Left Arrow */}
