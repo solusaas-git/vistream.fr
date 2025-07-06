@@ -98,20 +98,20 @@ export default function Services() {
               <div className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 sm:p-8 h-full shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2 hover:bg-white/15">
                 {/* Header with Icon and Title */}
                 <div className="flex items-center space-x-3 sm:space-x-4 mb-4 sm:mb-6">
-                  {/* Icon Container */}
+                {/* Icon Container */}
                   <div className="relative flex-shrink-0">
                     <div className={`w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <img
-                        src={service.image}
-                        alt={service.title}
+                    <img
+                      src={service.image}
+                      alt={service.title}
                         className="w-12 h-12 brightness-0 invert"
-                      />
-                    </div>
+                    />
+                  </div>
                     <div className={`absolute -top-1 -right-1 w-5 sm:w-6 h-5 sm:h-6 bg-gradient-to-r ${service.gradient} rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
                       <ArrowRight className="h-2.5 sm:h-3 w-2.5 sm:w-3 text-white" />
-                    </div>
                   </div>
-                  
+                </div>
+                
                   {/* Title */}
                   <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-gray-100 transition-colors flex-1">
                     {service.title}

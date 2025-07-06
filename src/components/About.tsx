@@ -87,8 +87,8 @@ export default function About() {
                   <span className="text-sm font-medium text-white/90">{t('about.tag')}</span>
                 </motion.div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
-                  {t('about.title')}
-                </h2>
+                {t('about.title')}
+              </h2>
               </div>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg">
                 {t('about.description')}

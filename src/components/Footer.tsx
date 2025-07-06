@@ -110,43 +110,43 @@ export default function Footer() {
                 <div className="hidden sm:block">
                   <h4 className="text-sm sm:text-lg font-bold mb-2 sm:mb-3 text-white">{t('footer.navigation')}</h4>
                   <ul className="space-y-1 sm:space-y-2">
-                    {quickLinks.map((link, index) => (
-                      <li key={index}>
-                        <a
-                          href={link.href}
+                {quickLinks.map((link, index) => (
+                  <li key={index}>
+                    <a
+                      href={link.href}
                           className="text-gray-300 hover:text-[#f04f24] transition-colors duration-300 flex items-center space-x-2 group text-xs sm:text-sm"
-                        >
+                    >
                           <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-[#f04f24] transition-colors" />
-                          <span>{link.name}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                      <span>{link.name}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
                 </div>
 
-                {/* Services */}
+            {/* Services */}
                 <div className="hidden sm:block">
                   <h4 className="text-sm sm:text-lg font-bold mb-2 sm:mb-3 text-white">{t('footer.services.title')}</h4>
                   <ul className="space-y-1 sm:space-y-2">
-                    {services.map((service, index) => (
-                      <li key={index}>
-                        <a
-                          href={service.href}
+                {services.map((service, index) => (
+                  <li key={index}>
+                    <a
+                      href={service.href}
                           className="text-gray-300 hover:text-[#f04f24] transition-colors duration-300 flex items-center space-x-2 group text-xs sm:text-sm"
-                        >
+                    >
                           <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-[#f04f24] transition-colors" />
-                          <span>{service.name}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                      <span>{service.name}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
                 </div>
 
-                {/* Contact & Legal */}
+            {/* Contact & Legal */}
                 <div>
                   <h4 className="text-sm sm:text-lg font-bold mb-2 sm:mb-3 text-white">{t('footer.contact.title')}</h4>
-                  
-                  {/* Contact Info */}
+              
+              {/* Contact Info */}
                   <div className="space-y-2 sm:space-y-3">
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -157,17 +157,17 @@ export default function Footer() {
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
                         <Phone className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-[#f04f24]" />
-                      </div>
+                  </div>
                       <span className="text-gray-300 text-xs">{t('footer.contact.phone')}</span>
-                    </div>
+                </div>
                     <div className="flex items-start space-x-2 sm:space-x-3">
                       <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
                         <MapPin className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-[#f04f24]" />
-                      </div>
-                      <span className="text-gray-300 text-xs">{t('footer.contact.location')}</span>
-                    </div>
                   </div>
+                      <span className="text-gray-300 text-xs">{t('footer.contact.location')}</span>
                 </div>
+                </div>
+              </div>
 
               </div>
             </motion.div>

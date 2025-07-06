@@ -3,11 +3,11 @@
     "title": "Vistream - Votre Expérience Vistream Streaming Premium",
     "logo": "Vistream"
   },
-  "nav": {
+    "nav": {
     "home": "Accueil",
-    "about": "À Propos",
-    "services": "Services",
-    "packages": "Nos bouquets",
+      "about": "À Propos",
+      "services": "Services",
+      "packages": "Nos bouquets",
     "pricing": "Nos Tarifs",
     "cta": "S'abonner Maintenant"
   },
@@ -140,6 +140,37 @@
     "series": {
       "number": "3,500",
       "text": "Séries en mise à jour régulière"
+    }
+  },
+  "channels": {
+    "title": "Chaînes & Streaming",
+    "subtitle": "Découvrez l'univers complet de Vistream avec plus de 152,000 chaînes et les meilleures plateformes de streaming",
+    "sports": {
+      "title": "Sports Premium",
+      "description": "Vivez l'émotion du sport avec les plus grandes compétitions européennes et internationales"
+    },
+    "streaming": {
+      "title": "Streaming Premium",
+      "description": "Accédez aux meilleures plateformes de streaming avec un seul abonnement"
+    },
+    "french": {
+      "title": "Chaînes françaises",
+      "description": "Toutes les chaînes de la TNT française en direct et en replay"
+    },
+    "features": {
+      "title": "Une expérience unique",
+      "description": "Profitez d'une expérience de streaming optimisée avec des fonctionnalités exclusives"
+    },
+    "allChannels": {
+      "title": "Toutes nos chaînes",
+      "description": "Découvrez la collection complète de nos 152,000+ chaînes disponibles",
+      "counter": "chaînes disponibles et bien plus encore..."
+    },
+    "cta": {
+      "title": "Prêt à commencer ?",
+      "description": "Choisissez votre formule et accédez immédiatement à plus de 152,000 chaînes",
+      "pricing": "Voir nos tarifs",
+      "home": "Retour à l'accueil"
     }
   },
   "footer": {

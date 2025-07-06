@@ -69,10 +69,10 @@ export default function Pricing() {
         '/images/sport/LOGOUEFA.png',
         '/images/sport/LOGO_EUROPA_LEAGUE.png',
         '/images/sport/LOGOUEFA_CONFERENCE_LEAGUE.png',
-        '/images/sport/68304448.png',
-        '/images/sport/68304632.png',
-        '/images/sport/CHN43FN_19_29082023.png',
-        '/images/sport/CHN43FN_177_29082023.png',
+        '/images/sport/EUROSPORT.png',
+        '/images/sport/BEIN SPORT.png',
+        '/images/sport/CANAL PLUS FOOT.png',
+        '/images/sport/CANAL PLUS SPORT.png',
         '/images/sport/logo_cplus.svg'
       ],
     },
@@ -121,13 +121,13 @@ export default function Pricing() {
           <div className="inline-flex items-center space-x-2 bg-[#f04f24]/10 backdrop-blur-sm border border-[#f04f24]/20 rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-3 sm:mb-4">
             <CreditCard className="h-3 sm:h-4 w-3 sm:w-4 text-[#f04f24]" />
             <span className="text-xs sm:text-sm font-medium text-white/90">Tarifs</span>
-          </div>
+            </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 sm:mb-3">
-            {t('pricing.title')}
-          </h2>
+              {t('pricing.title')}
+            </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-3xl mx-auto px-4 sm:px-0">
-            {t('pricing.subtitle')}
-          </p>
+              {t('pricing.subtitle')}
+            </p>
         </motion.div>
 
         {/* Pricing Cards Grid */}
@@ -141,25 +141,25 @@ export default function Pricing() {
               className={`relative group ${plan.popular ? 'lg:scale-105 z-10' : ''}`}
             >
               {/* Popular Badge */}
-              {plan.popular && (
+                              {plan.popular && (
                 <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-20">
                   <div className="bg-gradient-to-r from-[#f04f24] to-orange-500 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-bold shadow-xl border border-white/20">
-                    <div className="flex items-center space-x-1">
+                      <div className="flex items-center space-x-1">
                       <Star className="h-2 sm:h-3 w-2 sm:w-3 fill-white" />
-                      <span>Populaire</span>
+                        <span>Populaire</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* Savings Badge */}
-              {plan.savings && (
+                              {plan.savings && (
                 <div className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 z-20">
                   <div className="bg-green-500 text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full text-xs font-bold shadow-lg">
-                    -{plan.savings}
+                      -{plan.savings}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* Main Card */}
               <div className={`relative bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-xl border ${plan.borderColor} rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:scale-105 overflow-hidden h-full`}>
@@ -171,64 +171,64 @@ export default function Pricing() {
                   {/* Header */}
                   <div className="text-center mb-4 sm:mb-6">
                     <h3 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">
-                      {plan.title}
-                    </h3>
-                    
-                    {/* Price Display */}
-                    <div className="mb-3 sm:mb-4">
-                      {/* Original Price (Crossed Out) */}
-                      <div className="flex items-baseline justify-center mb-1">
-                        <span className="text-sm sm:text-base lg:text-lg text-gray-400 line-through">
-                          {plan.originalPrice}
-                        </span>
-                        <span className="text-xs sm:text-sm text-gray-400 line-through">
-                          {plan.originalDecimal}
-                        </span>
-                        <span className="text-xs sm:text-sm text-gray-400 line-through ml-1">
-                          {plan.period}
-                        </span>
-                      </div>
+                        {plan.title}
+                      </h3>
                       
-                      {/* Promotional Price */}
-                      <div className="flex items-baseline justify-center mb-1">
+                      {/* Price Display */}
+                    <div className="mb-3 sm:mb-4">
+                        {/* Original Price (Crossed Out) */}
+                        <div className="flex items-baseline justify-center mb-1">
+                        <span className="text-sm sm:text-base lg:text-lg text-gray-400 line-through">
+                            {plan.originalPrice}
+                          </span>
+                        <span className="text-xs sm:text-sm text-gray-400 line-through">
+                            {plan.originalDecimal}
+                          </span>
+                        <span className="text-xs sm:text-sm text-gray-400 line-through ml-1">
+                            {plan.period}
+                          </span>
+                        </div>
+                        
+                        {/* Promotional Price */}
+                        <div className="flex items-baseline justify-center mb-1">
                         <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-                          {plan.price}
-                        </span>
+                            {plan.price}
+                          </span>
                         <span className="text-sm sm:text-base lg:text-lg text-gray-300">
-                          {plan.decimal}
-                        </span>
+                            {plan.decimal}
+                          </span>
                         <span className="text-sm sm:text-base lg:text-lg text-[#f04f24] font-semibold ml-1">
-                          {plan.period}
-                        </span>
+                            {plan.period}
+                          </span>
+                        </div>
                       </div>
-                    </div>
 
-                    {/* CTA Button */}
-                    <motion.a
-                      href={plan.url}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                      {/* CTA Button */}
+                      <motion.a
+                        href={plan.url}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                       className={`block w-full bg-gradient-to-r ${plan.buttonColor} text-white py-2 sm:py-3 px-3 sm:px-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl mb-4 sm:mb-6 text-center text-sm sm:text-base`}
-                    >
-                      {plan.btn}
-                    </motion.a>
-                  </div>
+                      >
+                        {plan.btn}
+                      </motion.a>
+                    </div>
 
                   {/* Features List */}
                   <div className="space-y-3 sm:space-y-4">
-                    {features.map((feature, featureIndex) => (
-                      <div key={featureIndex}>
-                        <div className="flex items-center space-x-2 mb-2">
+                      {features.map((feature, featureIndex) => (
+                        <div key={featureIndex}>
+                          <div className="flex items-center space-x-2 mb-2">
                           <div className="flex-shrink-0 w-5 sm:w-6 h-5 sm:h-6 bg-green-500/20 rounded-full flex items-center justify-center">
                             <Check className="h-2.5 sm:h-3 w-2.5 sm:w-3 text-green-400" />
-                          </div>
-                          <div className="flex items-center space-x-2">
+                            </div>
+                            <div className="flex items-center space-x-2">
                             <feature.icon className="h-3 sm:h-4 w-3 sm:w-4 text-[#f04f24]" />
                             <span className="font-medium text-white text-xs sm:text-sm">{feature.title}</span>
+                            </div>
                           </div>
-                        </div>
-                        
-                        {feature.channels && (
+                          
+                          {feature.channels && (
                           <div className={`${feature.icon === Trophy ? 'flex flex-wrap gap-1' : 'flex space-x-1'} ml-6 sm:ml-8 mb-2`}>
                             {feature.icon === Trophy ? (
                               // Show all sport logos with wrapping
@@ -247,37 +247,37 @@ export default function Pricing() {
                                   <img
                                     key={channelIndex}
                                     src={channel}
-                                    alt={`Channel ${channelIndex + 1}`}
+                                  alt={`Channel ${channelIndex + 1}`}
                                     className="w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 object-contain bg-white/10 backdrop-blur-sm rounded border border-white/20"
-                                  />
-                                ))}
+                                />
+                              ))}
                                 <div className="flex items-center justify-center w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 bg-white/10 backdrop-blur-sm rounded border border-white/20 text-xs text-gray-300">
-                                  +149K
-                                </div>
+                                +149K
+                              </div>
                               </>
                             )}
-                          </div>
-                        )}
-                        
+                            </div>
+                          )}
+                          
                         <p className="text-gray-300 text-xs ml-6 sm:ml-8">
-                          {feature.description}
-                        </p>
-                      </div>
-                    ))}
+                            {feature.description}
+                          </p>
+                        </div>
+                      ))}
 
                     {/* Additional Features */}
                     <div className="pt-2 sm:pt-3 border-t border-white/10">
                       <div className="space-y-1.5 sm:space-y-2">
-                        {additionalFeatures.map((addFeature, addIndex) => (
-                          <div key={addIndex} className="flex items-center space-x-2">
+                          {additionalFeatures.map((addFeature, addIndex) => (
+                            <div key={addIndex} className="flex items-center space-x-2">
                             <div className="flex-shrink-0 w-4 sm:w-5 h-4 sm:h-5 bg-blue-500/20 rounded-full flex items-center justify-center">
                               <addFeature.icon className="h-2.5 sm:h-3 w-2.5 sm:w-3 text-blue-400" />
+                              </div>
+                              <span className="text-xs text-gray-300">{addFeature.text}</span>
                             </div>
-                            <span className="text-xs text-gray-300">{addFeature.text}</span>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>

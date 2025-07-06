@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations, useLanguage } from '@/lib/LanguageContext';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,12 +56,12 @@ export default function Header() {
             >
               {t('nav.services')}
             </button>
-            <button
-              onClick={() => scrollToSection('chaines')}
+            <Link
+              href="/channels"
               className="text-white hover:text-[#f04f24] transition-colors font-medium lg:font-bold drop-shadow-lg text-sm lg:text-base"
             >
               {t('nav.packages')}
-            </button>
+            </Link>
             <button
               onClick={() => scrollToSection('tarifs')}
               className="text-white hover:text-[#f04f24] transition-colors font-medium lg:font-bold drop-shadow-lg text-sm lg:text-base"
@@ -119,12 +120,13 @@ export default function Header() {
               >
                 {t('nav.services')}
               </button>
-              <button
-                onClick={() => scrollToSection('chaines')}
-                className="text-white hover:text-[#f04f24] transition-colors text-left font-semibold drop-shadow-lg py-3 px-3 -mx-3 rounded-lg hover:bg-white/20 active:bg-white/30"
+              <Link
+                href="/channels"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-white hover:text-[#f04f24] transition-colors text-left font-semibold drop-shadow-lg py-3 px-3 -mx-3 rounded-lg hover:bg-white/20 active:bg-white/30 block"
               >
                 {t('nav.packages')}
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('tarifs')}
                 className="text-white hover:text-[#f04f24] transition-colors text-left font-semibold drop-shadow-lg py-3 px-3 -mx-3 rounded-lg hover:bg-white/20 active:bg-white/30"

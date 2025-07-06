@@ -219,19 +219,19 @@ export default function Reviews() {
             
             {/* Indicators */}
             <div className="flex justify-center space-x-2 sm:space-x-3">
-              {reviews.map((_, index) => (
-                <motion.button
-                  key={index}
-                  onClick={() => goToReview(index)}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
-                  className={`transition-all duration-300 ${
-                    index === currentReview 
+            {reviews.map((_, index) => (
+              <motion.button
+                key={index}
+                onClick={() => goToReview(index)}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                className={`transition-all duration-300 ${
+                  index === currentReview 
                       ? 'w-6 sm:w-8 h-1.5 sm:h-2 bg-[#f04f24] rounded-full' 
                       : 'w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white/30 hover:bg-white/50 rounded-full'
-                  }`}
-                />
-              ))}
+                }`}
+              />
+            ))}
             </div>
             
             {/* Right Arrow */}

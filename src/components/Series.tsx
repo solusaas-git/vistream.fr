@@ -154,13 +154,13 @@ export default function Series() {
           </div>
         </motion.div>
 
-        {/* Netflix-Style Carousel with Auto-scroll */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative group/carousel"
-        >
+                 {/* Netflix-Style Carousel with Auto-scroll */}
+         <motion.div
+           initial={{ opacity: 0, y: 30 }}
+           animate={isInView ? { opacity: 1, y: 0 } : {}}
+           transition={{ duration: 0.6, delay: 0.2 }}
+           className="relative group/carousel"
+         >
           <div className="relative">
             <div
               ref={scrollRef}
@@ -238,25 +238,25 @@ export default function Series() {
             >
               <ChevronLeft className="h-4 sm:h-5 w-4 sm:w-5" />
             </motion.button>
-
-            {/* Progress Indicator */}
+          
+          {/* Progress Indicator */}
             <div className="flex justify-center space-x-2 sm:space-x-3">
-              {Array.from({ length: maxIndex + 1 }, (_, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    setIsPaused(true);
-                    setCurrentIndex(index);
-                    scrollToPosition(index * itemWidth);
-                    setTimeout(() => setIsPaused(false), 3000);
-                  }}
+            {Array.from({ length: maxIndex + 1 }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  setIsPaused(true);
+                  setCurrentIndex(index);
+                  scrollToPosition(index * itemWidth);
+                  setTimeout(() => setIsPaused(false), 3000);
+                }}
                   className={`w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full transition-all duration-300 ${
-                    index === currentIndex 
+                  index === currentIndex 
                       ? 'bg-[#f04f24] w-6 sm:w-8 lg:w-10' 
-                      : 'bg-white/30 hover:bg-white/50'
-                  }`}
-                />
-              ))}
+                    : 'bg-white/30 hover:bg-white/50'
+                }`}
+              />
+            ))}
             </div>
 
             {/* Right Arrow */}

@@ -3,11 +3,11 @@
     "title": "Vistream - Your Premium Vistream Streaming Experience",
     "logo": "Vistream"
   },
-  "nav": {
+    "nav": {
     "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "packages": "Our packages",
+      "about": "About",
+      "services": "Services",
+      "packages": "Our packages",
     "pricing": "Our prices",
     "cta": "Subscribe Now"
   },
@@ -140,6 +140,37 @@
     "series": {
       "number": "3,500",
       "text": "Series with regular updates"
+    }
+  },
+  "channels": {
+    "title": "Channels & Streaming",
+    "subtitle": "Discover the complete Vistream universe with over 152,000 channels and the best streaming platforms",
+    "sports": {
+      "title": "Premium Sports",
+      "description": "Experience the excitement of sports with the biggest European and international competitions"
+    },
+    "streaming": {
+      "title": "Premium Streaming",
+      "description": "Access the best streaming platforms with a single subscription"
+    },
+    "french": {
+      "title": "French Channels",
+      "description": "All French TNT channels live and on replay"
+    },
+    "features": {
+      "title": "A unique experience",
+      "description": "Enjoy an optimized streaming experience with exclusive features"
+    },
+    "allChannels": {
+      "title": "All our channels",
+      "description": "Discover our complete collection of 152,000+ available channels",
+      "counter": "channels available and many more..."
+    },
+    "cta": {
+      "title": "Ready to start?",
+      "description": "Choose your plan and get immediate access to over 152,000 channels",
+      "pricing": "See our pricing",
+      "home": "Back to home"
     }
   },
   "footer": {
