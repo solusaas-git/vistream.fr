@@ -86,6 +86,8 @@
       "btn": "Commander"
     },
     "features": {
+      "sport": "Sports",
+      "sportDesc": "Compétitions sportives en direct et sports premium",
       "channels": "Chaînes",
       "cinema": "Cinéma",
       "cinemaDesc": "Cinéma ultra-récent et films incontournables",

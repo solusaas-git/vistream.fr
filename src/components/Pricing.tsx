@@ -4,7 +4,7 @@ import { useTranslations } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Check, Star, Tv, Film, PlayCircle, Shield, Zap, Crown, CreditCard } from 'lucide-react';
+import { Check, Star, Tv, Film, PlayCircle, Shield, Zap, Crown, CreditCard, Trophy } from 'lucide-react';
 
 export default function Pricing() {
   const t = useTranslations();
@@ -60,6 +60,22 @@ export default function Pricing() {
   ];
 
   const features = [
+    {
+      icon: Trophy,
+      title: t('pricing.features.sport'),
+      description: t('pricing.features.sportDesc'),
+      channels: [
+        '/images/sport/LALIGA_BLANC.png',
+        '/images/sport/LOGOUEFA.png',
+        '/images/sport/LOGO_EUROPA_LEAGUE.png',
+        '/images/sport/LOGOUEFA_CONFERENCE_LEAGUE.png',
+        '/images/sport/68304448.png',
+        '/images/sport/68304632.png',
+        '/images/sport/CHN43FN_19_29082023.png',
+        '/images/sport/CHN43FN_177_29082023.png',
+        '/images/sport/logo_cplus.svg'
+      ],
+    },
     {
       icon: Tv,
       title: t('pricing.features.channels'),
@@ -213,18 +229,33 @@ export default function Pricing() {
                         </div>
                         
                         {feature.channels && (
-                          <div className="flex space-x-1 ml-6 sm:ml-8 mb-2">
-                            {feature.channels.map((channel, channelIndex) => (
-                              <img
-                                key={channelIndex}
-                                src={channel}
-                                alt={`Channel ${channelIndex + 1}`}
-                                className="w-8 sm:w-10 h-5 sm:h-6 object-contain bg-white/10 backdrop-blur-sm rounded border border-white/20"
-                              />
-                            ))}
-                            <div className="flex items-center justify-center w-8 sm:w-10 h-5 sm:h-6 bg-white/10 backdrop-blur-sm rounded border border-white/20 text-xs text-gray-300">
-                              +149K
-                            </div>
+                          <div className={`${feature.icon === Trophy ? 'flex flex-wrap gap-1' : 'flex space-x-1'} ml-6 sm:ml-8 mb-2`}>
+                            {feature.icon === Trophy ? (
+                              // Show all sport logos with wrapping
+                              feature.channels.map((channel, channelIndex) => (
+                                <img
+                                  key={channelIndex}
+                                  src={channel}
+                                  alt={`Sport ${channelIndex + 1}`}
+                                  className="w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 object-contain bg-white/10 backdrop-blur-sm rounded border border-white/20"
+                                />
+                              ))
+                            ) : (
+                              // Show 3 channels with counter for non-sport categories
+                              <>
+                                {feature.channels.slice(0, 3).map((channel, channelIndex) => (
+                                  <img
+                                    key={channelIndex}
+                                    src={channel}
+                                    alt={`Channel ${channelIndex + 1}`}
+                                    className="w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 object-contain bg-white/10 backdrop-blur-sm rounded border border-white/20"
+                                  />
+                                ))}
+                                <div className="flex items-center justify-center w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 bg-white/10 backdrop-blur-sm rounded border border-white/20 text-xs text-gray-300">
+                                  +149K
+                                </div>
+                              </>
+                            )}
                           </div>
                         )}
                         

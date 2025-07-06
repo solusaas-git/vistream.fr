@@ -86,6 +86,8 @@
       "btn": "Order"
     },
     "features": {
+      "sport": "Sports",
+      "sportDesc": "Live sports competitions and premium sports",
       "channels": "Channels",
       "cinema": "Cinema",
       "cinemaDesc": "Ultra-recent cinema and must-see films",
