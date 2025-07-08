@@ -4,6 +4,7 @@ import { useTranslations } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 import { Tv, PlayCircle, Headphones, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Services() {
@@ -101,9 +102,11 @@ export default function Services() {
                 {/* Icon Container */}
                   <div className="relative flex-shrink-0">
                     <div className={`w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
+                      width={48}
+                      height={48}
                         className="w-12 h-12 brightness-0 invert"
                     />
                   </div>

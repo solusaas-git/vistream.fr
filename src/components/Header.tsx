@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations, useLanguage } from '@/lib/LanguageContext';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
@@ -37,7 +38,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3">
             <div className="bg-black rounded-lg p-1.5 sm:p-2">
-              <img src="/images/logo.svg" alt="Vistream" className="h-5 w-5 sm:h-6 sm:w-6" />
+              <Image src="/images/logo.svg" alt="Vistream" width={24} height={24} className="h-5 w-5 sm:h-6 sm:w-6" />
             </div>
             <span className="text-lg sm:text-xl font-bold text-white drop-shadow-lg">{t('header.logo')}</span>
           </div>
@@ -77,9 +78,11 @@ export default function Header() {
               onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
               className="flex items-center space-x-1.5 lg:space-x-2 text-white hover:text-[#f04f24] transition-colors font-medium lg:font-bold drop-shadow-lg text-sm lg:text-base"
             >
-              <img 
+              <Image 
                 src={language === 'fr' ? '/images/language-en-us.svg' : '/images/language-fr.svg'} 
                 alt={language === 'fr' ? 'English' : 'Français'} 
+                width={24}
+                height={16}
                 className="h-3.5 w-5 lg:h-4 lg:w-6 object-cover rounded-sm"
               />
               <span>{language === 'fr' ? 'EN' : 'FR'}</span>
@@ -139,9 +142,11 @@ export default function Header() {
                   onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
                   className="flex items-center space-x-2 text-white hover:text-[#f04f24] transition-colors font-semibold drop-shadow-lg py-3 px-3 -mx-3 rounded-lg hover:bg-white/20 active:bg-white/30"
                 >
-                  <img 
+                  <Image 
                     src={language === 'fr' ? '/images/language-en-us.svg' : '/images/language-fr.svg'} 
                     alt={language === 'fr' ? 'English' : 'Français'} 
+                    width={24}
+                    height={16}
                     className="h-4 w-6 object-cover rounded-sm"
                   />
                   <span>{language === 'fr' ? 'EN' : 'FR'}</span>

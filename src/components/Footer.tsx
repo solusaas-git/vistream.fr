@@ -3,6 +3,7 @@
 import { useTranslations, useLanguage } from '@/lib/LanguageContext';
 import { ArrowUp, Mail, Phone, MapPin, Shield, Zap, Globe, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations();
@@ -63,7 +64,7 @@ export default function Footer() {
               className="lg:col-span-1"
             >
               <div className="flex items-center space-x-3 mb-3">
-                <img src="/images/logo.svg" alt="Vistream" className="h-6 w-6" />
+                <Image src="/images/logo.svg" alt="Vistream" width={24} height={24} className="h-6 w-6" />
                 <h3 className="text-lg font-bold">{t('header.logo')}</h3>
               </div>
               <p className="text-gray-300 mb-3 leading-relaxed text-sm">
@@ -209,9 +210,11 @@ export default function Footer() {
         className="fixed left-6 bottom-6 z-50 w-12 h-12 bg-white/25 backdrop-blur-xl hover:bg-white/40 border border-white/30 hover:border-white/50 rounded-full shadow-xl shadow-black/30 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
         title={language === 'fr' ? 'Switch to English' : 'Passer en Français'}
       >
-        <img 
+        <Image 
           src={language === 'fr' ? '/images/language-en-us.svg' : '/images/language-fr.svg'} 
           alt={language === 'fr' ? 'English' : 'Français'} 
+          width={28}
+          height={20}
           className="h-5 w-7 object-cover rounded-sm group-hover:scale-110 transition-transform duration-300"
         />
       </button>

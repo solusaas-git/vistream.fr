@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { Loader2 } from 'lucide-react';
 
 interface ImageData {
@@ -92,9 +93,11 @@ const InfiniteGallery: React.FC<InfiniteGalleryProps> = ({ className = '' }) => 
         {!image.loaded && (
           <div className="absolute inset-0 bg-gray-300 dark:bg-gray-700 animate-pulse rounded-lg"></div>
         )}
-        <img
+        <Image
           src={image.url}
           alt={image.alt}
+          width={800}
+          height={600}
           onLoad={() => handleImageLoad(image.id)}
           className={`w-full h-full object-cover transition-opacity duration-300 ${
             image.loaded ? 'opacity-100' : 'opacity-0'

@@ -4,6 +4,7 @@ import { useTranslations } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 import { Play, Shield, Zap, Globe, CreditCard, Sparkles } from 'lucide-react';
 
 export default function About() {
@@ -51,9 +52,11 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-2 sm:-inset-3 bg-gradient-to-r from-[#f04f24]/20 to-blue-500/20 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300" />
               <div className="relative bg-white/5 backdrop-blur-xl rounded-xl p-4 sm:p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <img
+                <Image
                   src="/images/about-img.jpg"
                   alt="About Vistream"
+                  width={600}
+                  height={400}
                   className="w-full rounded-lg shadow-xl"
                 />
                 <motion.div

@@ -11,14 +11,14 @@ export default function Counter() {
   const isInView = useInView(ref, { once: true });
   const [counts, setCounts] = useState({ channels: 0, films: 0, series: 0 });
 
-  const finalCounts = {
-    channels: 152000,
-    films: 26000,
-    series: 3500
-  };
-
   useEffect(() => {
     if (!isInView) return;
+
+    const finalCounts = {
+      channels: 152000,
+      films: 26000,
+      series: 3500
+    };
 
     const duration = 2000; // 2 seconds
     const intervals = 60;
@@ -38,7 +38,7 @@ export default function Counter() {
     }, duration);
 
     return () => clearInterval(timer);
-  }, [isInView, finalCounts]);
+  }, [isInView]);
 
   const formatNumber = (num: number) => {
     return Math.floor(num).toLocaleString();

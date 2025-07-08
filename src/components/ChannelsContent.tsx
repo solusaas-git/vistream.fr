@@ -4,6 +4,7 @@ import { useTranslations } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 import { 
   Tv, 
   Trophy, 
@@ -242,9 +243,11 @@ export default function ChannelsContent() {
               >
                 <div className="flex flex-col items-center space-y-2 sm:space-y-3">
                   <div className="w-12 h-9 sm:w-16 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                    <img 
+                    <Image 
                       src={channel.logo} 
                       alt={channel.name}
+                      width={48}
+                      height={32}
                       className="w-9 h-6 sm:w-12 sm:h-8 object-contain"
                     />
                   </div>
@@ -283,9 +286,11 @@ export default function ChannelsContent() {
               >
                 <div className="flex flex-col items-center space-y-2 sm:space-y-3">
                   <div className="w-12 h-9 sm:w-16 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                    <img 
+                    <Image 
                       src={service.logo} 
                       alt={service.name}
+                      width={48}
+                      height={32}
                       className="w-9 h-6 sm:w-12 sm:h-8 object-contain"
                     />
                   </div>
@@ -324,9 +329,11 @@ export default function ChannelsContent() {
               >
                 <div className="flex flex-col items-center space-y-2 sm:space-y-3">
                   <div className="w-12 h-9 sm:w-16 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                    <img 
+                    <Image 
                       src={channel.logo} 
                       alt={channel.name}
+                      width={48}
+                      height={32}
                       className="w-9 h-6 sm:w-12 sm:h-8 object-contain"
                     />
                   </div>

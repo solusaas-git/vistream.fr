@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import Image from 'next/image';
 import { Loader2, Tv } from 'lucide-react';
 
 interface ChannelsInfiniteGalleryProps {
@@ -52,9 +53,11 @@ const ChannelsInfiniteGallery: React.FC<ChannelsInfiniteGalleryProps> = ({
       <div className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/30 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#f04f24]/10">
         <div className="aspect-[16/12] p-4 sm:p-6 flex items-center justify-center bg-gradient-to-br from-white/5 to-transparent">
           <div className="relative w-full h-full flex items-center justify-center">
-            <img
+            <Image
               src={`/images/nos bouquets/${filename}`}
               alt={`Channel ${filename.replace(/\.[^/.]+$/, "")}`}
+              width={120}
+              height={80}
               className="max-w-full max-h-full object-contain filter drop-shadow-lg transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-2xl"
               style={{ 
                 maxWidth: '90%',
