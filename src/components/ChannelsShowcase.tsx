@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import Image from 'next/image';
 import { Zap, Star } from 'lucide-react';
 
 export default function ChannelsShowcase() {
@@ -104,9 +105,11 @@ export default function ChannelsShowcase() {
               >
                 {/* Static channel container */}
                 <div className="relative w-24 sm:w-28 lg:w-32 h-16 sm:h-18 lg:h-22 bg-white/35 backdrop-blur-xl border border-white/40 rounded-lg flex items-center justify-center shadow-md">
-                  <img
+                  <Image
                     src={channel.src}
                     alt={`Channel ${channel.id}`}
+                    width={112}
+                    height={72}
                     className="w-20 sm:w-24 lg:w-28 h-12 sm:h-14 lg:h-18 object-contain opacity-100"
                   />
                 </div>

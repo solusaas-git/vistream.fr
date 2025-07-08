@@ -4,6 +4,7 @@ import { useTranslations } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 import { Check, Star, Tv, Film, PlayCircle, Shield, Zap, Crown, CreditCard, Trophy } from 'lucide-react';
 
 export default function Pricing() {
@@ -233,10 +234,12 @@ export default function Pricing() {
                             {feature.icon === Trophy ? (
                               // Show all sport logos with wrapping
                               feature.channels.map((channel, channelIndex) => (
-                                <img
+                                <Image
                                   key={channelIndex}
                                   src={channel}
                                   alt={`Sport ${channelIndex + 1}`}
+                                  width={56}
+                                  height={36}
                                   className="w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 object-contain bg-white/10 backdrop-blur-sm rounded border border-white/20"
                                 />
                               ))
@@ -244,10 +247,12 @@ export default function Pricing() {
                               // Show 3 channels with counter for non-sport categories
                               <>
                                 {feature.channels.slice(0, 3).map((channel, channelIndex) => (
-                                  <img
+                                  <Image
                                     key={channelIndex}
                                     src={channel}
                                   alt={`Channel ${channelIndex + 1}`}
+                                    width={56}
+                                    height={36}
                                     className="w-10 sm:w-12 lg:w-14 h-6 sm:h-8 lg:h-9 object-contain bg-white/10 backdrop-blur-sm rounded border border-white/20"
                                 />
                               ))}

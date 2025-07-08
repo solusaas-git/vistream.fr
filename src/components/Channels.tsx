@@ -3,6 +3,7 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import Image from 'next/image';
 import { Tv } from 'lucide-react';
 
 export default function Channels() {
@@ -120,9 +121,11 @@ export default function Channels() {
             >
               {/* Channel Card - Responsive sizing */}
               <div className="relative w-24 sm:w-32 lg:w-36 h-16 sm:h-20 lg:h-24 bg-white/30 backdrop-blur-md border border-white/40 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
+                <Image
                   src={channel.src}
                   alt={channel.name}
+                  width={128}
+                  height={80}
                   className="w-20 sm:w-28 lg:w-32 h-12 sm:h-16 lg:h-20 object-contain"
                 />
               </div>
@@ -150,9 +153,11 @@ export default function Channels() {
             >
               {/* Channel Card - Responsive sizing */}
               <div className="relative w-24 sm:w-32 lg:w-36 h-16 sm:h-20 lg:h-24 bg-white/30 backdrop-blur-md border border-white/40 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img
+                <Image
                   src={channel.src}
                   alt={channel.name}
+                  width={128}
+                  height={80}
                   className="w-20 sm:w-28 lg:w-32 h-12 sm:h-16 lg:h-20 object-contain"
                 />
               </div>

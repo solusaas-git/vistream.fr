@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import { useTranslations } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import Image from 'next/image';
 import { ChevronLeft, ChevronRight, TrendingUp } from 'lucide-react';
 
 export default function Films() {
@@ -200,9 +201,10 @@ export default function Films() {
                       {/* Hover Border Effect */}
                       <div className="absolute inset-0 rounded-lg sm:rounded-xl border-2 border-transparent group-hover/card:border-[#f04f24]/50 transition-all duration-300 z-10" />
                       {/* Film Poster */}
-                      <img
+                      <Image
                         src={film.image}
                         alt={film.title}
+                        fill
                         className="w-full h-full object-cover transition-all duration-500 group-hover/card:brightness-110"
                       />
                       
