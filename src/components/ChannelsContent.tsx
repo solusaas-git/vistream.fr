@@ -7,12 +7,9 @@ import { useRef } from 'react';
 import { 
   Tv, 
   Trophy, 
-  Film, 
   PlayCircle, 
   Shield, 
-  Zap, 
   Monitor, 
-  Smartphone, 
   Users, 
   Clock, 
   Globe, 

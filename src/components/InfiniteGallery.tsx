@@ -135,7 +135,7 @@ const InfiniteGallery: React.FC<InfiniteGalleryProps> = ({ className = '' }) => 
         endMessage={
           <div className="text-center py-8">
             <p className="text-gray-500 dark:text-gray-400 text-lg">
-              🎉 You've reached the end of the gallery!
+              🎉 You&apos;ve reached the end of the gallery!
             </p>
           </div>
         }
